@@ -1,7 +1,7 @@
 # Q_Learning_Explained
 This is the code for "Q Learning Explained" by Siraj Raval on Youtube 
 
-# Coding Challenge
+# Coding Challenge - Due Date, Thursday, December 7 2017 at 12 PM PST
 
 This weeks coding challenge is to use Q learning to train a simple game bot. You can use OpenAI's gym or really any virtual environment. Bonus points for good documentation, good luck!
 
