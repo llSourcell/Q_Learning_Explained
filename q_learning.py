@@ -32,6 +32,7 @@ def run_episode(env, policy=None, render=False):
         total_reward += gamma ** step_idx * reward
         step_idx += 1
         if done:
+            env.close()
             break
     return total_reward
 
@@ -46,7 +47,7 @@ def obs_to_state(env, obs):
 
 if __name__ == '__main__':
     env_name = 'MountainCar-v0'
-    env = gym.make(env_name)
+    env = gym.make(env_name).env
     env.seed(0)
     np.random.seed(0)
     print ('----- using Q Learning -----')
